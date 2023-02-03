@@ -1,0 +1,23 @@
+{
+  "name": "gettingstarted",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "dashbordTest": "npm run test -- --record --key 1cb5bf2f-61a6-4183-9bdb-76b8e5cf3695 --spec cypress\\integration\\examples\\*.js --headed --browser chrome --env url=https://rahulshettyacademy.com",
+    "allTests": "node_modules\\.bin\\cypress run --record --key 1cb5bf2f-61a6-4183-9bdb-76b8e5cf3695 --spec cypress\\integration\\examples\\TestFramework_spec.js --headed --browser chrome --env url=https://rahulshettyacademy.com"
+  },
+  "author": "goutam",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.3.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.2.3"
+  },
+  "dependencies": {
+    "xlsx-populate": "^1.21.0"
+  }
+}
